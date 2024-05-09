@@ -1,23 +1,72 @@
 header {
     display: flex;
-    justify-content: center
-   
+    justify-content: center;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+a {
+    margin: 8px;
+    font-size: 20px;
+    color:#c7522a ;
+}
+a:visited {
+    color: #74a892;
+}
+
+a:hover {
+    color:#74a892;
+    font-size: 23px;
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+    animation-name: colorful-title;
+    animation-duration: 10s;
+}
+
+@keyframes colorful-title {
+    0% {
+        color: #c7522a
+    }
+
+    25% {
+        color: #e5c185
+    }
+    
+    50% {
+        color: #74a892
+    }
+
+    75% {
+        color: #008585;   
+    }
+
+    100% {
+        color: #c7522a;
+    }
 }
 
 
-h1 {
-    color: #008585;
-    font-family: "Poetsen One", sans-serif;
-    font-size: 50px
+main {
+    display: flex;
 }
 
 #coldplay_pic1 {
     width: 40%;
-    
+    padding: 20px;
+}
+
+/* for desktop */
+@media screen and (min-width: 600px) {
+    main {
+        flex-direction: row;
+        gap: 30px;
+    }
 }
