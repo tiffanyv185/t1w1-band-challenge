@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    justify-content: center
+   
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+
+h1 {
+    color: #008585;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 50px
+}
+
+#coldplay_pic1 {
+    width: 40%;
+    
+}
